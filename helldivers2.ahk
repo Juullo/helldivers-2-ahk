@@ -10,13 +10,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 *Numpad0::
 StratReinforce()
 *Numpad1::
-StratMachineGun()
 *Numpad2::
-StratExpendableAntiTank()
 *Numpad3::
-StratEagleAirstrike()
 *Numpad4::
-StratMortarSentry()
 *Numpad5::
 *Numpad6::
 *Numpad7::
