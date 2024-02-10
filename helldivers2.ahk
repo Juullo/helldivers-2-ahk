@@ -38,6 +38,9 @@ StratUploadData() {
 StratEagleRearm() {
     RunKeys(["W", "W", "A", "W", "D"])
 }
+StratSeafArtillery() {
+    RunKeys(["D", "W", "W", "S"])
+}
 
 ; Patriotic Administration Centre
 StratMachineGun() {
