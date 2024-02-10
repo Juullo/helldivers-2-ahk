@@ -135,7 +135,7 @@ StratEagleSmokeStrike() {
     RunKeys([])
 }
 StratEagle110mmRocketPods() {
-    RunKeys([])
+    RunKeys(["W", "D", "W", "A"])
 }
 StratEagle500kgBomb() {
     RunKeys([])
