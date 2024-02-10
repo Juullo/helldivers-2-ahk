@@ -9,17 +9,38 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; Bind your hotkeys below.
 *Numpad0::
 StratReinforce()
+return
+
 *Numpad1::
+return
+
 *Numpad2::
+return
+
 *Numpad3::
+return
+
 *Numpad4::
+return
+
 *Numpad5::
+return
+
 *Numpad6::
+return
+
 *Numpad7::
+return
+
 *Numpad8::
+return
+
 *Numpad9::
+return
+
 *NumpadDot::
 StratResupply()
+return
 
 ; Stratagem functions with key sequences.
 ; Generic Stratagems
@@ -134,7 +155,7 @@ StratOrbitalSmokeStrike() {
     RunKeys([])
 }
 StratHmgEmplacement() {
-    RunKeys([])
+    RunKeys(["S", "W", "A", "D", "D", "A"])
 }
 StratShieldGeneratorRelay() {
     RunKeys([])
@@ -197,13 +218,13 @@ StratEmsMortarSentry() {
 
 ; Run keyList
 RunKeys(keyList) {
-    Random, initialDelay, 50, 80
+    Random, initialDelay, 40, 50
     Send {Ctrl Down}
     Sleep, % initialDelay
 
     For key, value in keyList {
-        Random, delay, 50, 80
-        Random, pressDuration, 20, 35
+        Random, delay, 40, 50
+        Random, pressDuration, 20, 25
 
         Send, {%value% Down}
         Sleep, % pressDuration
