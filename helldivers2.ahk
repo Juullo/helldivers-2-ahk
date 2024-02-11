@@ -207,7 +207,7 @@ StratGuardDog() {
     RunKeys([])
 }
 StratAutocannonSentry() {
-    RunKeys([])
+    RunKeys(["S", "W", "D", "W", "A", "W"])
 }
 StratRocketSentry() {
     RunKeys([])
