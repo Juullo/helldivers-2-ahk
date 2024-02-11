@@ -86,7 +86,7 @@ StratAutocannon() {
     RunKeys([])
 }
 StratRailgun() {
-    RunKeys([])
+    RunKeys(["S", "D", "S", "W", "A", "D"])
 }
 StratSpear() {
     RunKeys([])
