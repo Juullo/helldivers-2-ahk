@@ -138,7 +138,7 @@ StratEagle110mmRocketPods() {
     RunKeys(["W", "D", "W", "A"])
 }
 StratEagle500kgBomb() {
-    RunKeys([])
+    RunKeys(["W", "D", "S", "S", "S"])
 }
 
 ; Bridge
