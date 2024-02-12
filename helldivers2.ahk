@@ -89,7 +89,7 @@ StratRailgun() {
     RunKeys(["S", "D", "S", "W", "A", "D"])
 }
 StratSpear() {
-    RunKeys([])
+    RunKeys(["S", "S", "W", "S", "S"])
 }
 
 ; Orbital Cannon
@@ -112,7 +112,7 @@ StratOrbitalLaser() {
     RunKeys([])
 }
 StratOrbitalRailcannonStrike() {
-    RunKeys([])
+    RunKeys(["D", "W", "S", "S", "D"])
 }
 
 ; Hangar
@@ -181,7 +181,7 @@ StratIncendiaryMines() {
     RunKeys([])
 }
 StratGuardDogRover() {
-    RunKeys([])
+    RunKeys(["S", "W", "A", "W", "D", "D"])
 }
 StratBallisticShieldBackpack() {
     RunKeys([])
