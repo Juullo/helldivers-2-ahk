@@ -68,7 +68,7 @@ StratMachineGun() {
     RunKeys(["S", "A", "S", "W", "D"])
 }
 StratAntiMaterielRifle() {
-    RunKeys([])
+    RunKeys(["S", "A", "D", "W", "S"])
 }
 StratStalwart() {
     RunKeys([])
@@ -172,7 +172,7 @@ StratSupplyPack() {
     RunKeys([])
 }
 StratGrenadeLauncher() {
-    RunKeys([])
+    RunKeys(["S", "A", "W", "A", "S"])
 }
 StratLaserCannon() {
     RunKeys([])
@@ -195,7 +195,7 @@ StratShieldGeneratorPack() {
 
 ; Robotics Workshop
 StratMachineGunSentry() {
-    RunKeys([])
+    RunKeys(["S", "W", "D", "D", "W"])
 }
 StratGatlingSentry() {
     RunKeys(["S", "W", "D", "A"])
@@ -204,7 +204,7 @@ StratMortarSentry() {
     RunKeys(["S", "W", "D", "D", "S"])
 }
 StratGuardDog() {
-    RunKeys([])
+    RunKeys(["S","W","D","W","D","S"])
 }
 StratAutocannonSentry() {
     RunKeys(["S", "W", "D", "W", "A", "W"])
