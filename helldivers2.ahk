@@ -333,11 +333,16 @@ OrbitalSmokeStrike() {
     RunKeys([])
 }
 
+
+EmsMortarSentry() {
+    RunKeys([])
+}
+
 HmgEmplacement() {
     global mode
     switch mode
     {
-        case "arrow":   RunKeys(["S", "W", "A", "D", "D", "A"])
+        case "arrow":   RunKeys(["Up", "Left", "Down", "Right", "Right", "Left"])
         default:        RunKeys(["S", "W", "A", "D", "D", "A"])
     }
 }
@@ -350,8 +355,8 @@ TeslaTower() {
     global mode
     switch mode
     {
-        case "arrow":   RunKeys(["S", "W", "D", "W", "A", "D"])
-        default:        RunKeys(["S", "W", "D", "W", "A", "D"])
+        case "arrow":   RunKeys(["Down", "Right", "Up", "Right", "Left", "Right"])
+        default:        RunKeys(["S", "W", "D", "A", "D"])
     }
 }
 
@@ -360,7 +365,7 @@ AntiPersonnelMinefield() {
     global mode
     switch mode
     {
-        case "arrow":   RunKeys(["S", "A", "W", "D"])
+        case "arrow":   RunKeys(["Down", "Left", "Up", "Right"])
         default:        RunKeys(["S", "A", "W", "D"])
     }
 }
@@ -369,7 +374,7 @@ SupplyPack() {
     global mode
     switch mode
     {
-        case "arrow":   RunKeys(["S", "A", "S", "W", "W", "S"])
+        case "arrow":   RunKeys(["Down", "Left", "Down", "Up", "Up", "Left"])
         default:        RunKeys(["S", "A", "S", "W", "W", "S"])
     }
 }
@@ -378,7 +383,7 @@ GrenadeLauncher() {
     global mode
     switch mode
     {
-        case "arrow":   RunKeys(["S", "A", "W", "A", "S"])
+        case "arrow":   RunKeys(["Down", "Left", "Up", "Left", "Down"])
         default:        RunKeys(["S", "A", "W", "A", "S"])
     }
 }
@@ -387,7 +392,7 @@ LaserCannon() {
     global mode
     switch mode
     {
-        case "arrow":   RunKeys(["S", "A", "S", "W", "A"])
+        case "arrow":   RunKeys(["Down", "Left", "Down", "Up", "Left"])
         default:        RunKeys(["S", "A", "S", "W", "A"])
     }
 }
@@ -396,7 +401,7 @@ IncendiaryMines() {
     global mode
     switch mode
     {
-        case "arrow":   RunKeys(["S", "A", "A", "S"])
+        case "arrow":   RunKeys(["Down", "Left", "Left", "Down"])
         default:        RunKeys(["S", "A", "A", "S"])
     }
 }
@@ -405,7 +410,7 @@ GuardDogRover() {
     global mode
     switch mode
     {
-        case "arrow":   RunKeys(["S", "W", "A", "W", "D", "D"])
+        case "arrow":   RunKeys(["Down", "Right", "Up", "Right", "Left", "Left"])
         default:        RunKeys(["S", "W", "A", "W", "D", "D"])
     }
 }
@@ -422,7 +427,7 @@ ShieldGeneratorPack() {
     global mode
     switch mode
     {
-        case "arrow":   RunKeys(["S", "W", "A", "D", "A", "D"])
+        case "arrow":   RunKeys(["Down", "Left", "Up", "Right", "Up", "Right"])
         default:        RunKeys(["S", "W", "A", "D", "A", "D"])
     }
 }
@@ -432,7 +437,7 @@ MachineGunSentry() {
     global mode
     switch mode
     {
-        case "arrow":   RunKeys(["S", "W", "D", "D", "W"])
+        case "arrow":   RunKeys(["Down", "Left", "Down", "Down", "Up"])
         default:        RunKeys(["S", "W", "D", "D", "W"])
     }
 }
@@ -441,7 +446,7 @@ GatlingSentry() {
     global mode
     switch mode
     {
-        case "arrow":   RunKeys(["S", "W", "D", "A"])
+        case "arrow":   RunKeys(["Down", "Left", "Down", "Right"])
         default:        RunKeys(["S", "W", "D", "A"])
     }
 }
@@ -450,7 +455,7 @@ MortarSentry() {
     global mode
     switch mode
     {
-        case "arrow":   RunKeys(["S", "W", "D", "D", "S"])
+        case "arrow":   RunKeys(["Down", "Left", "Down", "Down", "Right"])
         default:        RunKeys(["S", "W", "D", "D", "S"])
     }
 }
@@ -459,7 +464,7 @@ GuardDog() {
     global mode
     switch mode
     {
-        case "arrow":   RunKeys(["S", "W", "D", "W", "D", "S"])
+        case "arrow":   RunKeys(["Down", "Right", "Up", "Right", "Down", "Left"])
         default:        RunKeys(["S", "W", "D", "W", "D", "S"])
     }
 }
@@ -468,7 +473,7 @@ AutocannonSentry() {
     global mode
     switch mode
     {
-        case "arrow":   RunKeys(["S", "W", "D", "W", "A", "W"])
+        case "arrow":   RunKeys(["Down", "Left", "Down", "Up", "Left", "Up"])
         default:        RunKeys(["S", "W", "D", "W", "A", "W"])
     }
 }
@@ -477,11 +482,7 @@ RocketSentry() {
     global mode
     switch mode
     {
-        case "arrow":   RunKeys(["S", "W", "D", "D", "A"])
+        case "arrow":   RunKeys(["Down", "Left", "Down", "Down", "Left"])
         default:        RunKeys(["S", "W", "D", "D", "A"])
     }
-}
-
-EmsMortarSentry() {
-    RunKeys([])
 }
