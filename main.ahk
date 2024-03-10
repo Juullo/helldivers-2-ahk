@@ -4,7 +4,7 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; Only function if Helldivers 2 window is focused.
-; #IfWinActive, HELLDIVERS™ 2
+#IfWinActive, HELLDIVERS™ 2
 
 global MODE := "wasd" ; 'arrow'|'wasd'
 
