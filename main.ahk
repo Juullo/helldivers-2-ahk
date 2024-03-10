@@ -8,59 +8,62 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 global MODE := "wasd" ; 'arrow'|'wasd'
 
-; Bind your hotkeys below.
-*Numpad0::
-Reinforce()
-return
+NumpadDot::Resupply()
+Numpad0::Reinforce()
+Numpad1::Autocannon()
+Numpad2::
+Numpad3::
 
-*NumpadDot::
-Resupply()
-return
+Numpad4::OrbitalLaser()
+Numpad5::EagleAirstrike()
+Numpad6::Eagle500kgBomb()
 
-*Numpad1::
-return
+Numpad7::MortarSentry()
+Numpad8::AutocannonSentry()
+Numpad9::MachineGunSentry()
 
-*Numpad2::
-return
-
-*Numpad3::
-return
-
-*Numpad4::
-return
-
-*Numpad5::
-return
-
-*Numpad6::
-return
-
-*Numpad7::
-return
-
-*Numpad8::
-return
-
-*Numpad9::
-return
+t::Test()
 
 ; Run keyList
 RunKeys(keyList) {
-    Random, initialDelay, 40, 50
     Send {Ctrl Down}
-    Sleep, % initialDelay
+    RandomSleep()
 
     For key, value in keyList {
-        Random, delay, 50, 250
-        Random, pressDuration, 50, 100
-
-        Send, {Blind} {%value% Down}
-        Sleep, % pressDuration
-        Send, {Blind} {%value% Up}
-        Sleep, % delay
+        Send, {%value% Down}
+        RandomSleep()
+        Send, {%value% Up}
+        RandomSleep()
     }
 
     Send {Ctrl Up}
+}
+
+RandomSleep() {
+    Random, rand, 150.0, 500.0
+    Sleep rand
+}
+
+Test() {
+    SendInput, {LControl Down}
+	RandomSleep()
+	SendInput, {Blind}{d Down}
+	RandomSleep()
+	SendInput, {Blind}{d Up}
+	RandomSleep()
+	SendInput, {Blind}{d Down} 
+	RandomSleep()
+	SendInput, {Blind}{d Up}
+	RandomSleep()
+	SendInput, {Blind}{w Down}
+	RandomSleep()
+	SendInput, {Blind}{w Up}
+	RandomSleep()
+	SendInput, {Blind}{d Down}
+	RandomSleep()
+	SendInput, {Blind}{d Up}
+	RandomSleep()
+	SendInput, {LControl Up}
 }
 
 ; Generic agems
