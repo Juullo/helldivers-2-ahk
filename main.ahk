@@ -1,12 +1,12 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
-; #Warn  ; Enable warnings to assist with detecting common errors.
+﻿;#Warn  ; Enable warnings to assist with detecting common errors.
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; Only function if Helldivers 2 window is focused.
-#IfWinActive, HELLDIVERS™ 2
+; #IfWinActive, HELLDIVERS™ 2
 
-global MODE := 'wasd' ; 'arrow'|'wasd'
+global MODE := "wasd" ; 'arrow'|'wasd'
 
 ; Bind your hotkeys below.
 *Numpad0::
@@ -68,12 +68,8 @@ Reinforce() {
     global mode
     switch mode
     {
-        case "arrow":
-            RunKeys("Up", "Down", "Right", "Left", "Up")
-            break
-        default:
-            RunKeys("W", "S", "D", "A", "W")
-            break
+        case "arrow":   RunKeys(["Up", "Down", "Right", "Left", "Up"])
+        default:        RunKeys(["W", "S", "D", "A", "W"])
     }
 }
 
